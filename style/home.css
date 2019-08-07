@@ -4,8 +4,8 @@
 
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	/* font-size: 1.5vw; */
 	overflow-x: hidden;
+	/* font-size: 80%; */
 }
 
 a {
@@ -44,7 +44,7 @@ ul {
 .contentContainer {
 	position:absolute;
 	left:0;
-	background-color: #f8ecc2;
+	background-color: #6666ff;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -75,13 +75,20 @@ ul {
 .content h1 {
 	font-variant: small-caps;
 	text-align: center;
-	padding: 0.5em;
+	line-height: 150%;
+	padding: 0.25em 0.5em;
+}
+
+.content h2 {
+	text-align: center;
+	line-height: 150%;
+	padding: 0 0.5em;
 }
 
 .content p {
 	font-size: 1em;
-	padding: 1em;
-	line-height: 1.5em;
+	padding: 0 1em;
+	line-height: 150%;
 }
 
 /* .content p::first-letter { */
@@ -93,6 +100,18 @@ ul {
 .content img {
 	margin: 0 1em 1em 1em;
 	width: 30%;
+}
+
+.button {
+	padding: 1em;
+	color: white;
+	background-color: #888;
+	border: 2px outset #666;
+	border-radius: 5%;
+}
+
+.button:hover {
+	box-shadow: #444 0 0 10px 2px;
 }
 
 address {
