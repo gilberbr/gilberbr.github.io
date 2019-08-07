@@ -6,7 +6,8 @@
 	left: 0px;
 	top: 0px;
 	z-index: 1;
-	background-color: #202020;
+	/* background-color: rgba(0,0,0,0); */
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7), rgba(0,0,0,0.6), rgba(0,0,0,0.0));
 }
 
 .menuItem {
@@ -34,9 +35,9 @@
 .menuDropdownContent {
 	display: none;
 	min-width: 15vw;
-	background-color: #333;
+	background-color: rgba(0,0,0,0.8);
 	position: absolute;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 2px 12px 4px rgba(0,0,0,0.7);
 	z-index: 1;
 	overflow: hidden;
 }
@@ -51,7 +52,7 @@
 }
 
 .menuDropdownItem:hover {
-	background-color: #444;
+	background-color: rgba(128,128,128,0.5);
 	border: 0 2px 2px 2px solid black;
 }
 
