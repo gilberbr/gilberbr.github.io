@@ -147,14 +147,14 @@ address {
 		width: 90%;
 		min-width: initial;
 	}
-	#headerPhoto {
-		position: static;
-		margin: -5%;
-		width: 110%;
+	/* #headerPhoto { */
+		/* position: static; */
+		/* margin: -5%; */
+		/* width: 110%; */
 		/* left: 0; */
 		/* top: 14.7em; */
-	}
-	.headerSpacer {
-		height: 14.7em;
-	}
+	/* } */
+	/* .headerSpacer { */
+		/* height: 14.7em; */
+	/* } */
 }

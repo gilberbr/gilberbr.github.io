@@ -2,6 +2,7 @@
 	font-size: 1.25em;
 	text-align: center;
 	width: 100%;
+	height: 3em;
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -16,7 +17,7 @@
 	background-color: #55f;
 	color: white;
 	/* float: left; */
-	margin: 0.15em 0 0.15em;
+	margin: 0.15em 0 0.1em 0;
 	width: 15vw;
 	min-width: 5.6em;
 	padding: 0.25em;
@@ -64,11 +65,14 @@
 @media only screen and (max-width:620px) {
 	/* For mobile phones: */
 	.menuItem {
+		display: none;
 		position: relative;
 		width: 95vw;
-		left: 2.5vw;
-		right: 2.5vw;
-		margin: 0.2em 0 0.1em 0;
+		margin: 0.1em auto;
 		padding: 0.25em;
+	}
+	
+	.menu:hover .menuItem {
+		display: block;
 	}
 }
