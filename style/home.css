@@ -52,7 +52,7 @@ ul {
 .dividerBar {
 	display: block;
 	position: relative;
-	top: -2.4em;
+	top: -3em;
 	height: 6em;
 	/* background-color: #202020; */
 	background-image: linear-gradient(rgba(0,0,0,0),rgba(16,16,16,0.8), #080808, rgba(0,0,0,0.8), rgba(0,0,0,0.4), rgba(0,0,0,0));
