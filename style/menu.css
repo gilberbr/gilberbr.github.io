@@ -11,8 +11,7 @@
 	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7), rgba(0,0,0,0.6), rgba(0,0,0,0.0));
 }
 
-.menuItem {
-	display: inline-block;
+.menuItem, .menuItemIcon {
 	border-radius: 0.3em;
 	background-color: #55f;
 	color: white;
@@ -23,14 +22,18 @@
 	padding: 0.25em;
 }
 
-.menuDropdown {
+.menuItem {
+	display: inline-block;
+}
+
+.menuItemIcon {
+	display: none;
+}
+
+.menuGroup, .menuDropdown {
 	/* float: left; */
 	display: inline-block;
 	/* overflow: hidden; */
-}
-
-.menuDropdown:hover .menuDropdownContent {
-	display: block;
 }
 
 .menuDropdownContent {
@@ -40,7 +43,11 @@
 	position: absolute;
 	box-shadow: 0 2px 12px 4px rgba(0,0,0,0.7);
 	z-index: 1;
-	overflow: hidden;
+	/* overflow: hidden; */
+}
+
+.menuDropdown:hover .menuDropdownContent {
+	display: block;
 }
 
 .menuDropdownItem {
@@ -52,12 +59,32 @@
 	margin: 0 auto;
 }
 
+.menuDropdownDivider{
+	display: block;
+	content: " ";
+	height: 0.1em;
+	width: 90%;
+	margin: auto;
+	background-color: #888;
+}
+
+.menuDropdownRoot {
+	display: none;
+	font-style: italic;
+	text-align: center;
+	color: #aaa;
+}
+
+.menuDropdownRootDivider{
+	display: none;
+}
+
 .menuDropdownItem:hover {
 	background-color: rgba(128,128,128,0.5);
 	border: 0 2px 2px 2px solid black;
 }
 
-.menuItem:hover {
+.menuItem:hover, .menuItemIcon:hover {
 	background-color: #66f;
 	box-shadow: #ddf 0 0 10px;
 }
@@ -66,13 +93,29 @@
 	/* For mobile phones: */
 	.menuItem {
 		display: none;
-		position: relative;
-		width: 95vw;
-		margin: 0.1em auto;
-		padding: 0.25em;
 	}
 	
-	.menu:hover .menuItem {
+	.menuGroup {
+		display: inline-block;
+	}
+	
+	.menuItemIcon {
+		display: inline-block;
+		width: initial;
+		min-width: 2em;
+		min-height: 2em;
+	}
+	
+	.menuDropdownRoot, .menuDropdownRootDivider {
 		display: block;
+	}
+	
+	.menuItemIcon:hover+.menuDropdown .menuDropdownContent {
+		display: block;
+	}
+	
+	.menuDropdownContent {
+		width:75vw;
+		left: 12.5vw;
 	}
 }
