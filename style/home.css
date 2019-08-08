@@ -17,7 +17,11 @@ ul {
 }
 
 #headerPhoto {
+	height: 33vw;
 	width: 100%;
+	min-height: 50vh;
+	object-fit: cover;
+	overflow-x: hidden;
 	z-index: -1;
 }
 
@@ -29,6 +33,7 @@ ul {
 
 .headerSpacer {
 	height: 33vw;
+	min-height: 50vh;
 	background-color: rgba(0,0,0,0);
 }
 
@@ -59,7 +64,7 @@ ul {
 .contentContainer {
 	position:absolute;
 	left:0;
-	background-color: #6666ff;
+	background-color: #efd;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -71,7 +76,7 @@ ul {
 
 .content {
 	background-color: rgba(255,255,255,0.85);
-	border: 2px solid maroon;
+	border: 2px solid #222;
 	border-radius: 10px;
 	box-shadow: rgba(0,0,0,0.8) 3px 3px 5px;
 	color: black;
