@@ -29,7 +29,19 @@ ul {
 
 .headerSpacer {
 	height: 33vw;
-	opacity: 0;
+	background-color: rgba(0,0,0,0);
+}
+
+.headerSpacer p {
+	font-family: serif;
+	color: white;
+	font-size: 5em;
+	text-align: center;
+	text-shadow: 2px 2px 3px #000, -2px 2px 3px #000, 2px -2px 3px #000, -2px -2px 3px #000;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .dividerBar {
