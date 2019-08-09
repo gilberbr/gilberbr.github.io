@@ -16,6 +16,14 @@ ul {
 	list-style-type: none;
 }
 
+blockquote {
+	border-left: 0.5em solid #888;
+	padding-left: 1em;
+	margin-left: 2em;
+	display: table;
+	background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0));
+}
+
 #headerPhoto {
 	height: 33vw;
 	width: 100%;
@@ -47,6 +55,17 @@ ul {
 	position: relative;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+.headerSpacer img {
+	height: 25vw;
+	max-width: 66vw;
+	min-height: 35vh;
+	object-fit: scale-down;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .dividerBar {
@@ -86,7 +105,7 @@ ul {
 	margin: 2em auto 2em auto;
 }
 
-.content::after {
+.content::after, .clearfix::after, .read-now::before{
 	content: "";
 	clear: both;
 	display: table;
@@ -111,6 +130,11 @@ ul {
 	line-height: 150%;
 }
 
+.content .read-now {
+	font-size: 1.5em;
+	text-align: center;
+}
+
 /* .content p::first-letter { */
 	/* float: left; */
 	/* font-size: 300%; */
@@ -123,7 +147,7 @@ ul {
 }
 
 .button {
-	padding: 1em;
+	padding: 0.5em;
 	color: white;
 	background-color: #888;
 	border: 2px outset #666;
