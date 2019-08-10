@@ -158,6 +158,18 @@ blockquote {
 	box-shadow: #444 0 0 10px 2px;
 }
 
+.image-gallery {
+	display: block;
+	padding: 1em;
+	margin: auto;
+	max-width: 100%;
+}
+
+.image-gallery img {
+	float: left;
+	margin: 0;
+}
+
 address {
 	font-size: 0.75em;
 	color: #888;
